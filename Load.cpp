@@ -3,6 +3,11 @@
 #include <array>
 #include <list>
 #include <cassert>
+#include <fstream>
+
+#include "convert_assets.hpp"
+#include "data_path.hpp"
+#include "read_write_chunk.hpp"
 
 namespace {
 	std::array< std::list< std::function< void() > >, MaxLoadTag > &get_load_lists() {

@@ -25,6 +25,8 @@
 #include <functional>
 #include <stdexcept>
 
+#include "PPU466.hpp"
+
 enum LoadTag : uint32_t {
 	LoadTagEarly,
 	LoadTagDefault,
@@ -78,4 +80,6 @@ struct Load< void > {
 	}
 };
 
-
+// TODO better way than hardcoding?
+const std::array<std::string, 3> asset_names = {"background", "character", "bugs"};
+void load_assets(PPU466 ppu);

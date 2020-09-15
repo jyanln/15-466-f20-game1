@@ -50,9 +50,9 @@ int main(int argc, char **argv) {
 
 	//create window:
 	SDL_Window *window = SDL_CreateWindow(
-		"gp20 game1: remember to change your title", //TODO: remember to set a title for your game!
+		"Bug swatter",
 		SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-		2*PPU466::ScreenWidth + 8, 2*PPU466::ScreenHeight + 8, //TODO: modify window size if you'd like
+		4*PPU466::ScreenWidth + 16, 4*PPU466::ScreenHeight + 16,
 		SDL_WINDOW_OPENGL
 		| SDL_WINDOW_RESIZABLE //uncomment to allow resizing
 		| SDL_WINDOW_ALLOW_HIGHDPI //uncomment for full resolution on high-DPI screens
@@ -130,7 +130,8 @@ int main(int argc, char **argv) {
 				} else if (evt.type == SDL_QUIT) {
 					Mode::set_current(nullptr);
 					break;
-				} else if (evt.type == SDL_KEYDOWN && evt.key.keysym.sym == SDLK_PRINTSCREEN) {
+				//} else if (evt.type == SDL_KEYDOWN && evt.key.keysym.sym == SDLK_PRINTSCREEN) {
+				} else if (evt.type == SDL_KEYDOWN && evt.key.keysym.sym == SDLK_r) {
 					// --- screenshot key ---
 					std::string filename = "screenshot.png";
 					std::cout << "Saving screenshot to '" << filename << "'." << std::endl;

@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# Bug Swatter
 
-Author: (TODO: your name)
+Author: Jonathan Yan
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: Vent your frustrations against all of bugkind in a game where you swat giant human-sized bugs.
 
 Screen Shot:
 
@@ -10,13 +10,13 @@ Screen Shot:
 
 How Your Asset Pipeline Works:
 
-(TODO: describe the steps in your asset pipeline, from source files to tiles/backgrounds/whatever you upload to the PPU466.)
+The pipeline uses the binary in asset\_pipeline/convert\_assets to convert any png spritesheet to a loadable asset file. Spritesheets must have at most 4 unique colors (including transparency), and be made of whole 8x8 sprites.
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+Arrow keys to move, and space to swat. Bugs will leave behind giant messes of blood that are impassable, so take care not to get trapped. Press R to restart.
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources: The lack of both quantity and quality of assets should indicated that all were self-made :)
 
 This game was built with [NEST](NEST.md).
 
