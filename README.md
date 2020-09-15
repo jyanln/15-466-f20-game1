@@ -10,7 +10,7 @@ Screen Shot:
 
 How Your Asset Pipeline Works:
 
-The pipeline uses the binary in asset\_pipeline/convert\_assets to convert any png spritesheet to a loadable asset file. Spritesheets must have at most 4 unique colors (including transparency), and be made of whole 8x8 sprites.
+The pipeline uses the binary in asset\_pipeline/convert\_assets to convert any png spritesheet to a loadable asset file. Spritesheets must have at most 4 unique colors (including transparency), and be made of whole 8x8 sprites. Converted asset files must be placed in the dist/assets folder to be used.
 
 How To Play:
 
